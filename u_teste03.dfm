@@ -12,6 +12,7 @@ object frm_teste03: Tfrm_teste03
   Font.Style = []
   OldCreateOrder = False
   OnClose = FormClose
+  OnHide = FormHide
   PixelsPerInch = 96
   TextHeight = 13
   object Image1: TImage
@@ -1119,5 +1120,6 @@ object frm_teste03: Tfrm_teste03
     Font.Style = []
     ParentFont = False
     TabOrder = 4
+    OnClick = nextClick
   end
 end

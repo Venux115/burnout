@@ -1,0 +1,33 @@
+unit u_dm;
+
+interface
+
+uses
+  System.SysUtils, System.Classes;
+
+type
+  TDM = class(TDataModule)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DM: TDM;
+  pontuacao:integer;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+uses
+u_teste01;
+
+begin
+pontuacao:= frm_teste01.provisoria1;
+end;
+
+end.

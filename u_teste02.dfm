@@ -12,6 +12,7 @@ object frm_teste02: Tfrm_teste02
   Font.Style = []
   OldCreateOrder = False
   OnClose = FormClose
+  OnHide = FormHide
   PixelsPerInch = 96
   TextHeight = 13
   object Image1: TImage

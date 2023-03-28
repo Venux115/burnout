@@ -22,6 +22,7 @@ type
     next: TButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure nextClick(Sender: TObject);
+    procedure FormHide(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,17 +31,23 @@ type
 
 var
   frm_teste02: Tfrm_teste02;
+  provisorio:integer;
 
 implementation
 
 {$R *.dfm}
 
 uses
-u_Splash, u_teste03;
+u_Splash, u_teste03, u_dm;
 
 procedure Tfrm_teste02.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
 splash.close;
+end;
+
+procedure Tfrm_teste02.FormHide(Sender: TObject);
+begin
+DM.pontuacao:= DM.pontuacao + provisorio;
 end;
 
 procedure Tfrm_teste02.nextClick(Sender: TObject);
@@ -48,6 +55,87 @@ begin
   application.CreateForm(Tfrm_teste03,frm_teste03);
   frm_teste02.Hide;
   frm_teste03.ShowModal;
-end;
+
+  provisorio:=0;
+
+  case (cb1.ItemIndex) of
+    0:
+      begin
+        provisorio := provisorio + 0;
+      end;
+    1:
+      begin
+        provisorio := provisorio + 1;
+      end;
+    2:
+      begin
+        provisorio := provisorio + 2;
+      end;
+    3:
+      begin
+        provisorio := provisorio + 3;
+      end;
+  end;
+
+  case (cb2.ItemIndex) of
+    0:
+      begin
+        provisorio := provisorio + 0;
+      end;
+    1:
+      begin
+        provisorio := provisorio + 1;
+      end;
+    2:
+      begin
+        provisorio := provisorio + 2;
+      end;
+    3:
+      begin
+        provisorio := provisorio + 3;
+      end;
+  end;
+
+  case (cb3.ItemIndex) of
+    0:
+      begin
+        provisorio := provisorio + 0;
+      end;
+    1:
+      begin
+        provisorio := provisorio + 1;
+      end;
+    2:
+      begin
+        provisorio := provisorio + 2;
+      end;
+    3:
+      begin
+        provisorio := provisorio + 3;
+      end;
+  end;
+
+  case (cb4.ItemIndex) of
+    0:
+      begin
+        provisorio := provisorio + 0;
+      end;
+    1:
+      begin
+        provisorio := provisorio + 1;
+      end;
+    2:
+      begin
+        provisorio := provisorio + 2;
+      end;
+    3:
+      begin
+        provisorio := provisorio + 3;
+      end;
+  end;
+
+  DM.pontuacao := DM.pontuacao + provisorio;
+
+  end;
 
 end.

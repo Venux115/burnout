@@ -3,7 +3,8 @@ unit u_teste01;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
   Vcl.Imaging.pngimage;
 
@@ -22,6 +23,7 @@ type
     next: TButton;
     procedure nextClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormHide(Sender: TObject);
   private
     { Private declarations }
   public
@@ -30,26 +32,111 @@ type
 
 var
   frm_teste01: Tfrm_teste01;
+  provisorio: integer;
 
 implementation
 
 {$R *.dfm}
 
 uses
-u_Splash,u_teste02;
+  u_Splash, u_teste02,u_dm;
 
 procedure Tfrm_teste01.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-splash.close;
+  splash.close;
+end;
+
+procedure Tfrm_teste01.FormHide(Sender: TObject);
+begin
+DM.pontuacao:= DM.pontuacao + provisorio;
 end;
 
 procedure Tfrm_teste01.nextClick(Sender: TObject);
 begin
-application.CreateForm(Tfrm_teste02,frm_teste02);
-frm_teste01.hide;
-frm_teste02.showmodal;
+  application.CreateForm(Tfrm_teste02, frm_teste02);
+  frm_teste01.hide;
+  frm_teste02.showmodal;
+  provisorio:=0;
+  case (cb1.ItemIndex) of
+    0:
+      begin
+        provisorio := provisorio + 0;
+      end;
+    1:
+      begin
+        provisorio := provisorio + 1;
+      end;
+    2:
+      begin
+        provisorio := provisorio + 2;
+      end;
+    3:
+      begin
+        provisorio := provisorio + 3;
+      end;
+  end;
+
+  case (cb2.ItemIndex) of
+    0:
+      begin
+        provisorio := provisorio + 0;
+      end;
+    1:
+      begin
+        provisorio := provisorio + 1;
+      end;
+    2:
+      begin
+        provisorio := provisorio + 2;
+      end;
+    3:
+      begin
+        provisorio := provisorio + 3;
+      end;
+  end;
+
+  case (cb3.ItemIndex) of
+    0:
+      begin
+        provisorio := provisorio + 0;
+      end;
+    1:
+      begin
+        provisorio := provisorio + 1;
+      end;
+    2:
+      begin
+        provisorio := provisorio + 2;
+      end;
+    3:
+      begin
+        provisorio := provisorio + 3;
+      end;
+  end;
+
+  case (cb4.ItemIndex) of
+    0:
+      begin
+        provisorio := provisorio + 0;
+      end;
+    1:
+      begin
+        provisorio := provisorio + 1;
+      end;
+    2:
+      begin
+        provisorio := provisorio + 2;
+      end;
+    3:
+      begin
+        provisorio := provisorio + 3;
+      end;
+  end;
 
 
-end;
+
+
+  end;
+
 
 end.
