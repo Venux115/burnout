@@ -15,7 +15,6 @@ object frm_teste01: Tfrm_teste01
   OldCreateOrder = False
   Position = poDesigned
   OnClose = FormClose
-  OnHide = FormHide
   PixelsPerInch = 96
   TextHeight = 13
   object Image1: TImage

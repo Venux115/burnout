@@ -23,16 +23,16 @@ type
     next: TButton;
     procedure nextClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure FormHide(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
+    provisorio:integer;
   end;
 
 var
   frm_teste01: Tfrm_teste01;
-  provisorio: integer;
+
 
 implementation
 
@@ -46,16 +46,9 @@ begin
   splash.close;
 end;
 
-procedure Tfrm_teste01.FormHide(Sender: TObject);
-begin
-DM.pontuacao:= DM.pontuacao + provisorio;
-end;
-
 procedure Tfrm_teste01.nextClick(Sender: TObject);
 begin
-  application.CreateForm(Tfrm_teste02, frm_teste02);
-  frm_teste01.hide;
-  frm_teste02.showmodal;
+
   provisorio:=0;
   case (cb1.ItemIndex) of
     0:
@@ -135,7 +128,9 @@ begin
 
 
 
-
+  application.CreateForm(Tfrm_teste02, frm_teste02);
+  frm_teste01.hide;
+  frm_teste02.showmodal;
   end;
 
 

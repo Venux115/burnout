@@ -19,18 +19,19 @@ type
 
 var
   Form1: TForm1;
+  pontuacao:integer;
 
 implementation
 
 {$R *.dfm}
 
 uses
-u_Splash,u_dm;
+u_Splash,u_teste01,u_teste02,u_teste03;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-
-  showmessage(inttostr(DM.pontuacao));
+  pontuacao:= (frm_teste01.provisorio) + (frm_teste02.provisorio2) + (frm_teste03.provisorio3);
+  showmessage(inttostr(frm_teste01.provisorio)+inttostr(frm_teste02.provisorio2)+inttostr(frm_teste03.provisorio3)+inttostr(pontuacao));
 end;
 
 procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);

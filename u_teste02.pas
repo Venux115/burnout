@@ -27,11 +27,12 @@ type
     { Private declarations }
   public
     { Public declarations }
+    provisorio2:integer;
   end;
 
 var
   frm_teste02: Tfrm_teste02;
-  provisorio:integer;
+
 
 implementation
 
@@ -47,95 +48,95 @@ end;
 
 procedure Tfrm_teste02.FormHide(Sender: TObject);
 begin
-DM.pontuacao:= DM.pontuacao + provisorio;
+//DM.pontuacao:= DM.pontuacao + provisorio;
 end;
 
 procedure Tfrm_teste02.nextClick(Sender: TObject);
 begin
-  application.CreateForm(Tfrm_teste03,frm_teste03);
-  frm_teste02.Hide;
-  frm_teste03.ShowModal;
 
-  provisorio:=0;
+
+  provisorio2:=0;
 
   case (cb1.ItemIndex) of
     0:
       begin
-        provisorio := provisorio + 0;
+        provisorio2 := provisorio2 + 0;
       end;
     1:
       begin
-        provisorio := provisorio + 1;
+        provisorio2 := provisorio2 + 1;
       end;
     2:
       begin
-        provisorio := provisorio + 2;
+        provisorio2 := provisorio2 + 2;
       end;
     3:
       begin
-        provisorio := provisorio + 3;
+        provisorio2 := provisorio2 + 3;
       end;
   end;
 
   case (cb2.ItemIndex) of
     0:
       begin
-        provisorio := provisorio + 0;
+        provisorio2 := provisorio2 + 0;
       end;
     1:
       begin
-        provisorio := provisorio + 1;
+        provisorio2 := provisorio2 + 1;
       end;
     2:
       begin
-        provisorio := provisorio + 2;
+        provisorio2 := provisorio2 + 2;
       end;
     3:
       begin
-        provisorio := provisorio + 3;
+        provisorio2 := provisorio2 + 3;
       end;
   end;
 
   case (cb3.ItemIndex) of
     0:
       begin
-        provisorio := provisorio + 0;
+        provisorio2 := provisorio2 + 0;
       end;
     1:
       begin
-        provisorio := provisorio + 1;
+        provisorio2 := provisorio2 + 1;
       end;
     2:
       begin
-        provisorio := provisorio + 2;
+        provisorio2 := provisorio2 + 2;
       end;
     3:
       begin
-        provisorio := provisorio + 3;
+        provisorio2 := provisorio2 + 3;
       end;
   end;
 
   case (cb4.ItemIndex) of
     0:
       begin
-        provisorio := provisorio + 0;
+        provisorio2 := provisorio2 + 0;
       end;
     1:
       begin
-        provisorio := provisorio + 1;
+        provisorio2 := provisorio2 + 1;
       end;
     2:
       begin
-        provisorio := provisorio + 2;
+        provisorio2 := provisorio2 + 2;
       end;
     3:
       begin
-        provisorio := provisorio + 3;
+        provisorio2 := provisorio2 + 3;
       end;
   end;
 
-  DM.pontuacao := DM.pontuacao + provisorio;
 
+  application.CreateForm(Tfrm_teste03,frm_teste03);
+  frm_teste02.Hide;
+  frm_teste03.ShowModal;
   end;
 
 end.
