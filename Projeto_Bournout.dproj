@@ -102,8 +102,16 @@
             <Form>Splash</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="U_teste01.pas">
-            <Form>Form2</Form>
+        <DCCReference Include="u_teste01.pas">
+            <Form>frm_teste01</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="u_teste02.pas">
+            <Form>frm_teste02</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="u_teste03.pas">
+            <Form>frm_teste03</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

@@ -31,10 +31,11 @@ begin
 Pb_Splash.position  := Pb_splash.position + 25;
 if Pb_Splash.position = 100 then
 begin
-application.Createform(Tform2,form2);
+application.Createform(Tfrm_teste01,frm_teste01);
 Tm_splash.enabled := false;
-form2.Showmodal;
 splash.Hide;
+frm_teste01.Showmodal;
+
 end;
 end;
 
