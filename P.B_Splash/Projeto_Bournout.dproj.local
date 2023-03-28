@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/03/07 14:51:17.000.009,=C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/07 23:23:53.000.648,=C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/07 23:37:21.000.654,=C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/27 17:23:42.000.685,=C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/27 17:37:03.000.481,=C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/03/27 19:06:30.000.443,C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\gabri\Downloads\U_Splash.pas</Transaction>
+    <Transaction>2023/03/27 19:06:30.000.443,C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\gabri\Downloads\U_Splash.dfm</Transaction>
+    <Transaction>2023/03/27 19:06:48.000.496,C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\gabri\Downloads\U_teste01.dfm</Transaction>
+    <Transaction>2023/03/27 19:06:48.000.496,C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas=C:\Users\gabri\Downloads\U_teste01.pas</Transaction>
+    <Transaction>2023/03/27 19:06:58.000.177,C:\Users\gabri\OneDrive\Documentos\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\gabri\Downloads\Projeto_Bournout.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
