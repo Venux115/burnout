@@ -39,7 +39,7 @@ implementation
 {$R *.dfm}
 
 uses
-  u_Splash, u_dm, unit1;
+  u_Splash, u_dm,u_result;
 
 procedure Tfrm_teste03.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
@@ -127,11 +127,17 @@ begin
       end;
   end;
 
+  if (cb1.ItemIndex = -1) or (cb2.ItemIndex = -1) or (cb3.ItemIndex = -1) or (cb4.ItemIndex  = -1) then
+  begin
+      showmessage('Há campos não preenchidos');
+  end else
+  begin
 application.CreateForm(TFrm_resultado,frm_resultado);
 
-frm_teste03.hide;
-frm_resultado.ShowModal;
+frm_teste03.visible := false;
+frm_resultado.visible := true;
 
+end;
 end;
 
 end.

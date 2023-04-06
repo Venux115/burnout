@@ -2,8 +2,8 @@ object frm_teste03: Tfrm_teste03
   Left = 0
   Top = 0
   Caption = 'frm_teste03'
-  ClientHeight = 522
-  ClientWidth = 733
+  ClientHeight = 526
+  ClientWidth = 736
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,8 +18,8 @@ object frm_teste03: Tfrm_teste03
     AlignWithMargins = True
     Left = 3
     Top = 3
-    Width = 727
-    Height = 516
+    Width = 730
+    Height = 520
     Align = alClient
     AutoSize = True
     Center = True
@@ -1109,14 +1109,14 @@ object frm_teste03: Tfrm_teste03
   object next: TButton
     Left = 557
     Top = 448
-    Width = 110
-    Height = 33
+    Width = 132
+    Height = 41
     Caption = 'Resultado'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clSkyBlue
-    Font.Height = -11
+    Font.Height = -19
     Font.Name = 'Tahoma'
-    Font.Style = []
+    Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 4
     OnClick = nextClick

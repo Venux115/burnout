@@ -37,10 +37,17 @@ procedure Tfrm_apresentacao.btn_continuarClick(Sender: TObject);
 begin
 nome:=txt_nome.Text;
 idade:=(txt_idade.text);
+if (txt_nome.Text = '') or (txt_idade.Text = '') then
+begin
+  showmessage('Há campos nao preenchidos');
+  end else
+  begin
+
 
 application.CreateForm(Tfrm_bour,frm_bour);
 frm_apresentacao.hide;
 frm_bour.ShowModal;
+end;
 end;
 
 procedure Tfrm_apresentacao.FormClose(Sender: TObject;

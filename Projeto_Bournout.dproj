@@ -119,9 +119,6 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="unit1.pas">
-            <Form>frm_resultado</Form>
-        </DCCReference>
         <DCCReference Include="U_explica.pas">
             <Form>frm_exp</Form>
             <FormType>dfm</FormType>
@@ -138,7 +135,36 @@
             <Form>frm_pontos</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="u_result.pas">
+            <Form>frm_resultado</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <None Include="ModelSupport_Projeto_Bournout\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\Projeto_Burnout\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\Projeto_Burnout\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_apresentacao\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_apresentacao\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_bourn\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_bourn\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_dm\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_dm\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\U_explica\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\U_explica\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_pontos\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_pontos\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_result\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_result\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\U_Splash\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\U_Splash\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_teste01\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_teste01\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_teste02\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_teste02\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_teste03\default.txaPackage"/>
+        <None Include="ModelSupport_Projeto_Bournout\u_teste03\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\Projeto_Bournout\default.txvpck"/>
+        <None Include="ModelSupport_Projeto_Bournout\Projeto_Bournout\default.txaPackage"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -161,7 +187,61 @@
                 </Source>
             </Delphi.Personality>
             <Deployment Version="3">
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\Projeto_Bournout\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_result\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_teste03\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_apresentacao\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_pontos\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="ModelSupport_Projeto_Bournout\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_teste02\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_teste01\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\Projeto_Burnout\default.txaPackage" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
@@ -170,6 +250,102 @@
                 <DeployFile LocalName="Win32\Debug\Projeto_Bournout.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>Projeto_Bournout.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\Projeto_Bournout\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_teste03\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_result\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_dm\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\U_explica\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\U_Splash\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\U_explica\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_teste01\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\U_Splash\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_teste02\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_bourn\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_pontos\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_dm\default.txaPackage" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\Projeto_Burnout\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_apresentacao\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="ModelSupport_Projeto_Bournout\u_bourn\default.txvpck" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>

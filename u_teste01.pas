@@ -127,10 +127,18 @@ begin
   end;
 
 
+  if (cb1.ItemIndex = -1) or (cb2.ItemIndex = -1) or (cb3.ItemIndex = -1) or (cb4.ItemIndex  = -1) then
+  begin
+      showmessage('Há campos não preenchidos');
+  end else
+  begin
+      application.CreateForm(Tfrm_teste02, frm_teste02);
+      frm_teste01.hide;
+      frm_teste02.showmodal;
+  end;
 
-  application.CreateForm(Tfrm_teste02, frm_teste02);
-  frm_teste01.hide;
-  frm_teste02.showmodal;
+
+
   end;
 
 

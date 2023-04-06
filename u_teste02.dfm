@@ -1106,14 +1106,14 @@ object frm_teste02: Tfrm_teste02
   object next: TButton
     Left = 565
     Top = 448
-    Width = 110
-    Height = 33
+    Width = 124
+    Height = 41
     Caption = 'Pr'#243'ximo'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clSkyBlue
-    Font.Height = -11
+    Font.Height = -19
     Font.Name = 'Tahoma'
-    Font.Style = []
+    Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 4
     OnClick = nextClick
