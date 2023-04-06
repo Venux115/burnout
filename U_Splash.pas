@@ -33,8 +33,8 @@ if Pb_Splash.position = 100 then
 begin
 application.Createform(Tfrm_apresentacao,frm_apresentacao);
 Tm_splash.enabled := false;
-splash.Hide;
-frm_apresentacao.Showmodal;
+splash.visible:= false;
+frm_apresentacao.visible:= true;
 
 
 end;
